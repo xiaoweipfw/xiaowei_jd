@@ -4,9 +4,9 @@ let qs = require('querystring');
 let urls = require('url');
 let path = require('path');
 let notify = require('./sendNotify');
-let eval = require("./eval");
+let eval = require("./JDWXX_JD_jd_eval");
 let assert = require('assert');
-let jxAlgo = require("./jxAlgo");
+let jxAlgo = require("./JDWXX_JD_jd_jxAlgo");
 class env {
     constructor(name) {
         this.name = name;
