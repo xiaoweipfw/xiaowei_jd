@@ -1,6 +1,7 @@
 let common = require("./JDWXX_JD_jd_common");
 let $ = new common.env('宠汪汪兑换京豆');
 let fs = require("fs");
+
 $.setOptions({
     headers: {
         'content-type': 'application/json',
