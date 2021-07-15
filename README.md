@@ -78,9 +78,10 @@ export packetId=""
 ```
 
 ## 邀请有礼
-
+#### zdtx 设置为true自动抢提现100
 ```
 export yqm="UtYmOqFJrh4Sl45d4mqg6Q%3D%3D"
+export zdtx=false
 ```
 
 
@@ -125,3 +126,4 @@ export SHOP_TOKENS="30DE3F2E8B4278A120007C8CD0D4F835&3C0B9CE1F01623C77ADE9F90AFA
 ```
 export kois=""
 ```
+
