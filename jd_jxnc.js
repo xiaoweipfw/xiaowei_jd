@@ -26,7 +26,7 @@ cron "0 9,12,18 * * *" script-path=jd_jxnc.js,tag=京喜农场
 =========================小火箭===========================
 京喜农场 = type=cron,script-path=jd_jxnc.js, cronexpr="0 9,12,18 * * *", timeout=3600, enable=true
 */
-
+//修改至此
 const $ = new Env('京喜农场');
 let notify = ''; // nodejs 发送通知脚本
 let notifyLevel = $.isNode() ? process.env.JXNC_NOTIFY_LEVEL || 1 : 1; // 通知级别 0=只通知成熟;1=本次获得水滴>0;2=任务执行;3=任务执行+未种植种子;
@@ -37,8 +37,8 @@ let tokenNull = {'farm_jstoken': '', 'phoneid': '', 'timestamp': ''}; // 内置�
 let tokenArr = []; // 用户 token 数组
 let currentToken = {}; // 当前用户 token
 let shareCode = ''; // 内置助力码
-let jxncShareCodeArr = []; // 用户 助力码 数组
-let currentShareCode = []; // 当前用户 要助力的助力码
+let jxncShareCodeArr = ['35896717d459f0321c2dd7abea8fec3d','26aac0952c4b86525e0e391f17f310b0','42dd1017442d9ac8785b98ec0d34af00','47991c2edbdebf5d185ab44c4ac5b056']; // 用户 助力码 数组
+let currentShareCode = ['35896717d459f0321c2dd7abea8fec3d','26aac0952c4b86525e0e391f17f310b0','42dd1017442d9ac8785b98ec0d34af00','47991c2edbdebf5d185ab44c4ac5b056']; // 当前用户 要助力的助力码
 const openUrl = `openjd://virtual?params=${encodeURIComponent('{ "category": "jump", "des": "m", "url": "https://wqsh.jd.com/sns/201912/12/jxnc/detail.html?ptag=7155.9.32&smp=b47f4790d7b2a024e75279f55f6249b9&active=jdnc_1_chelizi1205_2"}',)}`; // 打开京喜农场
 let subTitle = '', message = '', option = {'open-url': openUrl}; // 消息副标题，消息正文，消息扩展参数
 const JXNC_API_HOST = 'https://wq.jd.com/';
