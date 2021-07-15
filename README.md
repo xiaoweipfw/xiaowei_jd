@@ -25,6 +25,8 @@ ql repo https://ghproxy.com/https://github.com/JDWXX/JD.git "jd_|jx_|getJDCookie
 0 10 0 * * *
 ```
 
+### 任务执行缺少文件 
+##### sendNotify.js，手动从本库里下至 /QL/scripts 目录下，其他文件同理
 
 
 ## 安装依赖
