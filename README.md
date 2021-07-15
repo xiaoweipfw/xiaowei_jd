@@ -78,7 +78,11 @@ export packetId=""
 ```
 
 ## 邀请有礼
+
+```
 export yqm="UtYmOqFJrh4Sl45d4mqg6Q%3D%3D"
+```
+
 
 ## 刷微信、支付宝步数
 ##### 下载小米运动软件，注册账号密码，绑定微信支付宝，通过宝塔在 jd_bs.py 文件里添加账号密码即可
