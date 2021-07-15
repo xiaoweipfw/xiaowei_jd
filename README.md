@@ -5,10 +5,10 @@
 本人非大佬，定时更新各类整合脚本，失效脚本会及时删除
 拥有此库等于拥有所有！！！
 
-拉取代码
-
-ql repo https://ghproxy.com/https://github.com/zll2317463866/tiger.git "jd_|jx_|getJDCookie|.js" "activity|backUp" "^jd[^_]|USER"
-
+拉取仓库
+【脚本技术交流群】
+ql repo https://ghproxy.com/https://github.com/JDWXX/JD.git "jd_|jx_|getJDCookie" "activity|backUp" "^jd[^_]|USER"
+0 10 0 * * *
 
 安装依赖
 【图形验证】
