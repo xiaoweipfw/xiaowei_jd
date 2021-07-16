@@ -1,3 +1,10 @@
+#/*
+# 小米运动更新步数
+#[task_local]
+# 小米运动更新步数
+#0 15 15 * *
+#*/
+
 import requests
 
 import random
