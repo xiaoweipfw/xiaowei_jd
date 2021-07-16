@@ -45,6 +45,15 @@ docker exec -it QL bash -c "cd scripts && npm i -S png-js"
 docker exec -it QL bash -c "apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source"
 ```
 
+# python 脚本
+
+## 入会 【jd_rh.py】
+##### 退会,会有黑号风险
+
+## 刷微信、支付宝步数 【jd_bs.py】
+##### 下载小米运动软件，注册账号密码，绑定微信支付宝，通过宝塔在 jd_bs.py 文件里添加账号密码即可
+
+
 # 助力配置
 ## 青龙面板-配置文件里添加 
 
@@ -87,9 +96,6 @@ export yqm="UtYmOqFJrh4Sl45d4mqg6Q%3D%3D"
 export zdtx=false
 ```
 
-
-## 刷微信、支付宝步数
-##### 下载小米运动软件，注册账号密码，绑定微信支付宝，通过宝塔在 jd_bs.py 文件里添加账号密码即可
 
 
 ## 店铺签到
