@@ -133,6 +133,6 @@ export kois=""
 ##### 先执行 柠檬发财大赢家获取邀请码，查看日志，从日志里获取 redEnvelopeId 和 inviter，添加至配置文件
 
 ```
-export redEnvelopeId="5fd20cedbe1c4f15abe0c317ddd5257e96361626364924678"
-export inviter="dEfElq0h2aqf9HkPhnIaiw"
+export redEnvelopeId="a45166e259694002a32cb978fc188fae64711626364924409"
+export inviter="gL9wXhsUV10DVlTsq_ND9A"
 ```
