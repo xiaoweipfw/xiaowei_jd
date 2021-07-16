@@ -127,3 +127,12 @@ export SHOP_TOKENS="30DE3F2E8B4278A120007C8CD0D4F835&3C0B9CE1F01623C77ADE9F90AFA
 export kois=""
 ```
 
+## 发财翻翻乐 每天0.3现金
+
+## 柠檬发财大赢家
+##### 先执行 柠檬发财大赢家获取邀请码，查看日志，从日志里获取 redEnvelopeId 和 inviter，添加至配置文件
+
+```
+export redEnvelopeId="5fd20cedbe1c4f15abe0c317ddd5257e96361626364924678"
+export inviter="dEfElq0h2aqf9HkPhnIaiw"
+```
