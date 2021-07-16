@@ -144,3 +144,16 @@ export inviter="gL9wXhsUV10DVlTsq_ND9A"
 ### 脚本jd_senbeans.js
 ### 脚本会根据你总CK数量计算出共能助力几个账号，然后默认给前几名的账号助力【所以自己的号要放前面】
 #### 例如有75个CK，通过计算大致可以助力7个号，那只有几个账号能拿到助力奖励
+
+
+## 种豆得豆
+#### 先运行 【获取互助码】 拿到助力码
+#### 同一个京东账号的好友互助码用@符号隔开,不同京东账号之间用&符号或者换行隔开,下面给一个示例
+#### 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
+
+```
+export PlantBeanShareCodes = [
+'4npkonnsy7xi22wlv5uh6flmp7i5q4kdxohvhba@26s3haczpmd7g7uxiegiyu5pvy@olmijoxgmjutziswjsb5yxftpa3vsecfd7ek23a@ta4sxnqpkjahbsy2e4wajgkhke@e7lhibzb3zek2cwflxxsmq2rjtbejb2mhvdkxra@giv74teqyhpdab5jcziie6harq@adubibkuqx7mxkqyhnlsdht3bq3h7wlwy7o5jii@xzyoc2ytoasw4zpuoti4idcshgnpxumxqb3jjji',//账号一的好友shareCode,不同好友中间用@符号隔开
+'4npkonnsy7xi22wlv5uh6flmp7i5q4kdxohvhba@26s3haczpmd7g7uxiegiyu5pvy@olmijoxgmjutziswjsb5yxftpa3vsecfd7ek23a@ta4sxnqpkjahbsy2e4wajgkhke@e7lhibzb3zek2cwflxxsmq2rjtbejb2mhvdkxra@giv74teqyhpdab5jcziie6harq@adubibkuqx7mxkqyhnlsdht3bq3h7wlwy7o5jii@xzyoc2ytoasw4zpuoti4idcshgnpxumxqb3jjji',//账号二的好友shareCode，不同好友中间用@符号隔开
+]
+```
