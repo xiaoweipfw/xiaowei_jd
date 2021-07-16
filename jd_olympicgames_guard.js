@@ -1,6 +1,7 @@
 /*
-全民运动会守卫红包
-更新时间：2021-7-10
+[task_local]
+#全民运动会守卫红包
+0 7 * * *
 活动入口：首页右侧下方
 备注：环境变量olympicgames_inviteId填写助力码
 链接：https://raw.githubusercontent.com/cdle/jd_study/main/disposable/jd_olympicgames_guard.js
