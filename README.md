@@ -141,7 +141,7 @@ export SHOP_TOKENS="30DE3F2E8B4278A120007C8CD0D4F835&3C0B9CE1F01623C77ADE9F90AFA
 
 ### 填写 pt_pin
 ```
-export kois=""
+export kois="%E5%94%90%E6%9C%95%E9%94%8B&t142171&jd_kXOjqjxoEElT&jd_uhuavdFubDeJ"
 ```
 
 ## 发财翻翻乐 每天0.3现金
@@ -209,7 +209,13 @@ export MARKET_COIN_TO_BEANS="20"
 export JD_JOY_REWARD_NAME="20" 
 ```
 
+## 宠汪汪赛跑
+#### 赛跑先给lxk0301作者两个固定的pin进行助力,然后从账号内部与剩下的固定位置合并后随机抽取进行助力
+#### 如需自己账号内部互助,设置环境变量 JOY_RUN_HELP_MYSELF 为true,则开启账号内部互助
 
+```
+export JOY_RUN_HELP_MYSELF=true
+```
 
 
 
