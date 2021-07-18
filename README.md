@@ -6,6 +6,23 @@
 本人非大佬，定时更新各类整合脚本，失效脚本会及时删除
 拥有此库等于拥有所有！！！
 
+## 超低价阿里云服务器
+#### [https://www.aliyun.com/activity/ambassador/share-gift/goods?taskCode=xfyh2107&recordId=764770&userCode=31csnowy](https://www.aliyun.com/activity/ambassador/share-gift/goods?taskCode=xfyh2107&recordId=764770&userCode=31csnowy)
+
+## 腾讯云服务器
+#### [http://url.cn/5Z0ZWGI](http://url.cn/5Z0ZWGI)
+#### [备用购买地址](https://cloud.tencent.com/act/pro/starlake?fromSource=gwzcw.3788702.3788702.3788702&utm_medium=cpc&utm_id=gwzcw.3788702.3788702.3788702&cps_key=13c854d3ec192824956cc079f600753f)
+
+
+## 扫描教程
+#### 请看上面【青龙扫描.md】文件
+
+## 搭建教程 方式一
+#### [https://blog.csdn.net/tangcv/article/details/118691149](https://blog.csdn.net/tangcv/article/details/118691149)
+
+## 搭建教程 方式二
+#### [https://blog.csdn.net/weixin_42565036/category_11188503.html](https://blog.csdn.net/weixin_42565036/category_11188503.html)
+
 ## 交流群
 ### 1群 681030097
 ### 2群 681030097
@@ -14,7 +31,7 @@
 ##### 名称
 
 ```
-【脚本技术交流群】
+【JDWXX】
 ```
 ##### 命令
 
@@ -45,7 +62,7 @@ docker exec -it QL bash -c "cd scripts && npm i -S png-js"
 docker exec -it QL bash -c "apk add --no-cache build-base g++ cairo-dev pango-dev giflib-dev && cd scripts && npm install canvas --build-from-source"
 ```
 
-# python 脚本
+## python 脚本
 
 ## 入会 【jd_rh.py】
 ##### 退会,会有黑号风险
@@ -88,15 +105,6 @@ export tytpacketId=""
 export actId=""
 export packetId="" 
 ```
-
-## 邀请有礼
-#### zdtx 设置为true自动抢提现100
-```
-export yqm="UtYmOqFJrh4Sl45d4mqg6Q%3D%3D"
-export zdtx=false
-```
-
-
 
 ## 店铺签到
 #### 店铺签到 各类店铺签到，有新的店铺直接添加token即可
@@ -163,3 +171,74 @@ export PlantBeanShareCodes = [
 '4npkonnsy7xi22wlv5uh6flmp7i5q4kdxohvhba@26s3haczpmd7g7uxiegiyu5pvy@olmijoxgmjutziswjsb5yxftpa3vsecfd7ek23a@ta4sxnqpkjahbsy2e4wajgkhke@e7lhibzb3zek2cwflxxsmq2rjtbejb2mhvdkxra@giv74teqyhpdab5jcziie6harq@adubibkuqx7mxkqyhnlsdht3bq3h7wlwy7o5jii@xzyoc2ytoasw4zpuoti4idcshgnpxumxqb3jjji',//账号二的好友shareCode，不同好友中间用@符号隔开
 ]
 ```
+
+
+## 柠檬开卡3
+#### 你的邀请码
+```
+export opencard3="1eac1fedb6ed4badbe577e9c513162a8" 
+```
+
+# 安装青龙扫描
+原来安装过青龙面板，后期由于强哥更新导致扫码失效
+
+本文只给以前安装过青龙面板的人看，没安装的人自己找路径，由于涉及别人利润，那二篇文章我删了
+
+## 开放5701端口（要开放二个地方）
+阿里云开放5701端口
+服务器开放5701端口
+
+## 以前安装过的
+先在root目录下删除 public、JDC_arm64.zip、JDC_arm64、JDC 等文件,停止5701服务
+
+## 开始安装
+#### 服务器输入指令
+```
+yum install wget unzip -y
+```
+### 进入root目录
+
+#### 服务器输入指令
+```
+cd ..
+```
+
+```
+cd root/
+```
+
+服务器输入指令
+```
+wget https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a406456-63ac-413b-b1f6-27a6eed5945e/e517fb39-1bf6-4462-88b6-2983db76d1bb.zip && unzip e517fb39-1bf6-4462-88b6-2983db76d1bb.zip
+```
+
+服务器输入指令
+```
+chmod 777 JDC
+```
+
+服务器输入指令
+```
+./JDC
+```
+
+服务器输入指令
+```
+nohup ./JDC &
+```
+
+键盘按 Ctrl 键+ C 键 (要一起按下)，回到输入
+
+服务器输入指令
+
+```
+cd public
+```
+
+服务器输入指令
+
+```
+wget https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a31945b-22cb-4446-83cb-b078e22c7b51/70af12c5-cd1d-4871-9c2c-4cfdda6993f0.zip && unzip 70af12c5-cd1d-4871-9c2c-4cfdda6993f0.zip
+```
+
+IP + 5701  即可直接访问,扫码登录京东账号

@@ -16,7 +16,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let yqm = 'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D';
-let zdtx = false //设置为true自动抢提现100
+let zdtx = true //设置为true自动抢提现100
 if (process.env.yqm) {
   yqm = process.env.yqm;
 }
@@ -57,8 +57,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
         }
         continue
       }
-      
-      
+
+
       await helpme()
      if(zdtx == true){
      for (let i = 0; i < 20; i++) {
@@ -66,7 +66,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
       await tx()
      }
      }
-      
+
 
     }
   }
@@ -91,19 +91,19 @@ headers: {
       "Cookie": cookie,
       }
                 }
-      
+
         $.post(options, async (err, resp, data) => {
             try {
 
                     data = JSON.parse(data);
 
                     //console.log(data)
-                    
+
                     if(data.data.inviteStatus == 1){
                       console.log(data.data.inviteStatus+"邀请成功")
 
                 }else  if(data.data.inviteStatus == 0){
-                
+
                     console.log(data.data.inviteStatus+"邀请失败")}
             } catch (e) {
                 $.logErr(e, resp);
@@ -122,7 +122,7 @@ headers: {
                 let options = {
     url: `functionId=InviteFriendApiService&body={"method":"changeWxHongBao","data":{"order":3,"channel":1,"token":"","s":""}}&referer=-1&eid=eidIc2ff812158s1ARLLPvIBQjyII7trmiE3BQESzLTXqSC9s3TX28oQv3zQuaY%2B15FedjhWtgYfTsUSkl9FEDNBP8LQRrRx5GwEA93H4jSPYNJ1OvNs&aid=&client=ios&clientVersion=14.3&networkType=wifi&fp=-1&uuid=75aeceef3046d8ce11d354ff89af9517a2e4aa18&osVersion=14.3&d_brand=iPhone&d_model=iPhone9,2&agent=-1&pageClickKey=-1&screen=414*736&platform=3&lang=zh_CN&appid=market-task-h5&_t=1623066557140`,
 
-    
+
 headers: {
 "Origin": "https://invite-reward.jd.com",
 "Host": "api.m.jd.com",
@@ -130,19 +130,19 @@ headers: {
       "Cookie": cookie,
       }
                 }
-      
+
         $.get(options, async (err, resp, data) => {
             try {
 
                     data = JSON.parse(data);
 
-                   
+
                     console.log(data.message)
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
                     //return data.data;
 //allMessage += `京东账号${$.index}-${$.nickName || $.UserName}\n抽取京豆：${data.data.result.userAwardsCacheDto.jBeanAwardVo.prizeName}${$.index !== cookiesArr.length ? '\n\n' : '\n\n'}`;
                     //}
@@ -155,7 +155,7 @@ headers: {
             }
         });
     });
-}   
+}
 
 
 
