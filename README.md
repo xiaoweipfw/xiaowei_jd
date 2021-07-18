@@ -206,7 +206,7 @@ export MARKET_COIN_TO_BEANS="20"
 ## 宠汪汪积分兑换奖品
 #### 是否兑换京豆，默认0不兑换京豆，其中20为兑换20京豆,500为兑换500京豆，0为不兑换京豆.数量有限先到先得
 ```
-export joyRewardName="20" 
+export JD_JOY_REWARD_NAME="20" 
 ```
 
 
