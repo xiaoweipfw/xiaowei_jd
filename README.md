@@ -203,7 +203,7 @@ export opencard3="1eac1fedb6ed4badbe577e9c513162a8"
 export MARKET_COIN_TO_BEANS="20" 
 ```
 
-## 宠汪汪积分兑换奖品
+## 宠汪汪积分兑换奖品 【如果失败，请重新安装上面的依赖】
 #### 是否兑换京豆，默认0不兑换京豆，其中20为兑换20京豆,500为兑换500京豆，0为不兑换京豆.数量有限先到先得
 ```
 export JD_JOY_REWARD_NAME="20" 
