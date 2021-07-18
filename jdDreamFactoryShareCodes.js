@@ -8,7 +8,7 @@
 // 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
 let shareCodes = [
     '@',//账号一的好友shareCode,不同好友中间用@符号隔开
-    '',//账号二的好友shareCode，不同好友中间用@符号隔开
+    '@',//账号二的好友shareCode，不同好友中间用@符号隔开
 ]
 
 // 从日志获取互助码
