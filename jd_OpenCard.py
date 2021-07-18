@@ -889,7 +889,7 @@ def isMemory(memorylabel, startNum1, startNum2, midNum, endNum, pinNameList):
                         print(
                             f"\n上次已完成所有shopid，\n\nPs:您可以关注公众号或TG频道获取最新shopid。\n公众号: TopStyle\n电报TG:https://t.me/TopStyle2021\n\n请输入 0 或 1\n0 : 退出。\n1 : 重新跑一次，以防有漏")
                         try:
-#                             getyourNum = int(input("正在等待您的选择："))
+                            #getyourNum = int(input("正在等待您的选择："))
                             getyourNum = 1
                             if getyourNum == 1:
                                 print("Ok,那就重新跑一次~")
