@@ -38,8 +38,8 @@ readmes = """
 
 ### `【兼容环境】`
     1.Python3.3+ 环境
-    2.兼容ios设备软件：Pythonista 3、Pyto(已测试正常跑，其他软件自行测试)   
-    3.Windows exe 
+    2.兼容ios设备软件：Pythonista 3、Pyto(已测试正常跑，其他软件自行测试)
+    3.Windows exe
 
     安装依赖模块 :
     pip3 install requests
@@ -47,7 +47,7 @@ readmes = """
     python3 jd_OpenCard.py
 
     start.sh 脚本运行方法：
-    1.适合定时任务或不想依赖ini配置文件。 
+    1.适合定时任务或不想依赖ini配置文件。
     2.支持单号跑多开，如
        cp start.sh start_2.sh
        sh start_2.sh  #只跑里面配置的参数，如cookie
@@ -124,35 +124,35 @@ readmes = """
 ### 主配置文件[ OpenCardConfig.ini ] 请保持utf-8默认格式
 
  变量  | 值  | 说明
- ---- | ----- | ------  
- JD_COOKIE  | pt_key=xxx;pt_pin=xxx;  | 必要(多账号&分隔) 
- openCardBean  | 30 | int，入会送豆满足此值，否则不入会 
- record    | False或True | 布尔值，是否记录符合条件的shopid(默认True) 
- onlyRecord  | False或True |布尔值， True:仅记录，不入会(默认False) 
- memory  | False或True | 布尔值，开启记忆功能，接力上一次异常中断位置继续。(默认yes) 
- printlog  | False或True | 布尔值，True：只打印部分日志 False:打印所有日志 
- sleepNum  | False或True | Float，限制速度，单位秒，如果请求过快报错适当调整0.5秒以上 
- isRemoteSid  | False或True | 布尔值，True:使用作者远程仓库更新的id，False：使用本地shopid.txt的id 
-#### 兼容Env环境（如有配置则优先使用，适合AC、云服务环境等）    
+ ---- | ----- | ------
+ JD_COOKIE  | pt_key=xxx;pt_pin=xxx;  | 必要(多账号&分隔)
+ openCardBean  | 30 | int，入会送豆满足此值，否则不入会
+ record    | False或True | 布尔值，是否记录符合条件的shopid(默认True)
+ onlyRecord  | False或True |布尔值， True:仅记录，不入会(默认False)
+ memory  | False或True | 布尔值，开启记忆功能，接力上一次异常中断位置继续。(默认yes)
+ printlog  | False或True | 布尔值，True：只打印部分日志 False:打印所有日志
+ sleepNum  | False或True | Float，限制速度，单位秒，如果请求过快报错适当调整0.5秒以上
+ isRemoteSid  | False或True | 布尔值，True:使用作者远程仓库更新的id，False：使用本地shopid.txt的id
+#### 兼容Env环境（如有配置则优先使用，适合AC、云服务环境等）
         export JD_COOKIE='pt_key=xxx;pt_pin=xxx;' (多账号&分隔)
         export openCardBean=30
         export xxx=xxx
 
 #### Ps:您可以到以下途径获取最新的shopid.txt，定期更新：
 
-###### [GitHub仓库 https://github.com/curtinlv/JD-Script](https://github.com/curtinlv/JD-Script) 
+###### [GitHub仓库 https://github.com/curtinlv/JD-Script](https://github.com/curtinlv/JD-Script)
 ###### [Gitee仓库 https://gitee.com/curtinlv/JD-Script](https://gitee.com/curtinlv/JD-Script)
 ###### [TG频道 https://t.me/TopStyle2021](https://t.me/TopStyle2021)
 ###### [TG群 https://t.me/topStyle996](https://t.me/topStyle996)
 ###### 关注公众号【TopStyle】回复：shopid
 ![TopStyle](https://gitee.com/curtinlv/img/raw/master/gzhcode.jpg)
-# 
+#
     @Last Version: %s
 
     @Last Time: 2021-06-19 13:55
 
     @Author: Curtin
-#### **仅以学习交流为主，请勿商业用途、禁止违反国家法律 ，转载请留个名字，谢谢!** 
+#### **仅以学习交流为主，请勿商业用途、禁止违反国家法律 ，转载请留个名字，谢谢!**
 
 # End.
 [回到顶部](#readme)
@@ -176,7 +176,7 @@ scriptHeader = """
 ║                                      ║
 ════════════════════════════════════════
 @Version: {}""".format(version)
-remarks = '\n\n\tTG交流 : https://t.me/topstyle996\n\n\tTG频道 : https://t.me/TopStyle2021\n\n\t公众号 : TopStyle\n\n\t\t\t--By Curtin\n'
+remarks = ''
 
 timestamp = int(round(time.time() * 1000))
 today = datetime.datetime.now().strftime('%Y-%m-%d')
@@ -889,7 +889,8 @@ def isMemory(memorylabel, startNum1, startNum2, midNum, endNum, pinNameList):
                         print(
                             f"\n上次已完成所有shopid，\n\nPs:您可以关注公众号或TG频道获取最新shopid。\n公众号: TopStyle\n电报TG:https://t.me/TopStyle2021\n\n请输入 0 或 1\n0 : 退出。\n1 : 重新跑一次，以防有漏")
                         try:
-                            getyourNum = int(input("正在等待您的选择："))
+#                             getyourNum = int(input("正在等待您的选择："))
+                            getyourNum = 1
                             if getyourNum == 1:
                                 print("Ok,那就重新跑一次~")
                                 rmCount()
