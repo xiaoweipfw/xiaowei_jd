@@ -24,6 +24,8 @@ cron "1 7-21/2 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/maste
 搬的https://github.com/uniqueque/QuantumultX/blob/4c1572d93d4d4f883f483f907120a75d925a693e/Script/jd_plantBean.js
 */
 const $ = new Env('京东种豆得豆');
+
+console.log('\n====================QQ技术交流群 681030097====================\n')
 //Node.js用户请在jdCookie.js处填写京东ck;
 //ios等软件用户直接用NobyDa的jd cookie
 let jdNotify = true;//是否开启静默运行。默认true开启
@@ -34,8 +36,8 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 //此此内容是IOS用户下载脚本到本地使用，填写互助码的地方，同一京东账号的好友互助码请使用@符号隔开。
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
-  'mluaqp25jqdzoaiyb4eb3viclm@7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa@hnyn3j5q6xitdiv5r54bx3zqha@mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq@ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka@bw2eckbfemfiba42bf52kidnvz6rr4je7cmp7ha@cd2lbjgriwpzsetjdo4i5t6s3jguvzlapilphxy@3nds3dh2ebzau6whfis7kg2h3q3h7wlwy7o5jii',//账号一的好友shareCode,不同好友中间用@符号隔开
-  'mluaqp25jqdzoaiyb4eb3viclm@7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa@hnyn3j5q6xitdiv5r54bx3zqha@mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq@ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka@T0225KkcRRhI9VCCIhugkfIOJQCjVWnYaS5kRrbA@wo7xc2znigdez23tkuin32egdsekabwcubzhgra@olmijoxgmjutzsqjfcxsqazott36mnhuakgkc3q',//账号二的好友shareCode，不同好友中间用@符号隔开
+  'mluaqp25jqdzoaiyb4eb3viclm&7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa&hnyn3j5q6xitdiv5r54bx3zqha&mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq&ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka&bw2eckbfemfiba42bf52kidnvz6rr4je7cmp7ha&cd2lbjgriwpzsetjdo4i5t6s3jguvzlapilphxy&3nds3dh2ebzau6whfis7kg2h3q3h7wlwy7o5jii&olmijoxgmjutzsqjfcxsqazott36mnhuakgkc3q&wo7xc2znigdez23tkuin32egdsekabwcubzhgra&mlrdw3aw26j3xi3b3xgblzetwxwx4zbl73etuay',//账号一的好友shareCode,不同好友中间用@符号隔开
+  'mluaqp25jqdzoaiyb4eb3viclm&7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa&hnyn3j5q6xitdiv5r54bx3zqha&mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq&ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka&bw2eckbfemfiba42bf52kidnvz6rr4je7cmp7ha&cd2lbjgriwpzsetjdo4i5t6s3jguvzlapilphxy&3nds3dh2ebzau6whfis7kg2h3q3h7wlwy7o5jii&olmijoxgmjutzsqjfcxsqazott36mnhuakgkc3q&wo7xc2znigdez23tkuin32egdsekabwcubzhgra&mlrdw3aw26j3xi3b3xgblzetwxwx4zbl73etuay',//账号二的好友shareCode，不同好友中间用@符号隔开
 ]
 
 let allMessage = ``;

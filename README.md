@@ -160,16 +160,35 @@ export inviter="gL9wXhsUV10DVlTsq_ND9A"
 #### 例如有75个CK，通过计算大致可以助力7个号，那只有几个账号能拿到助力奖励
 
 
-## 种豆得豆
+## 东东农场、种豆得豆、东东萌宠、东东工厂、京喜工厂
 #### 先运行 【获取互助码】 拿到助力码
 #### 同一个京东账号的好友互助码用@符号隔开,不同京东账号之间用&符号或者换行隔开,下面给一个示例
 #### 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
 
+### 配置文件修改 env_name 里修改
 ```
-export PlantBeanShareCodes = [
-'4npkonnsy7xi22wlv5uh6flmp7i5q4kdxohvhba@26s3haczpmd7g7uxiegiyu5pvy@olmijoxgmjutziswjsb5yxftpa3vsecfd7ek23a@ta4sxnqpkjahbsy2e4wajgkhke@e7lhibzb3zek2cwflxxsmq2rjtbejb2mhvdkxra@giv74teqyhpdab5jcziie6harq@adubibkuqx7mxkqyhnlsdht3bq3h7wlwy7o5jii@xzyoc2ytoasw4zpuoti4idcshgnpxumxqb3jjji',//账号一的好友shareCode,不同好友中间用@符号隔开
-'4npkonnsy7xi22wlv5uh6flmp7i5q4kdxohvhba@26s3haczpmd7g7uxiegiyu5pvy@olmijoxgmjutziswjsb5yxftpa3vsecfd7ek23a@ta4sxnqpkjahbsy2e4wajgkhke@e7lhibzb3zek2cwflxxsmq2rjtbejb2mhvdkxra@giv74teqyhpdab5jcziie6harq@adubibkuqx7mxkqyhnlsdht3bq3h7wlwy7o5jii@xzyoc2ytoasw4zpuoti4idcshgnpxumxqb3jjji',//账号二的好友shareCode，不同好友中间用@符号隔开
-]
+## 需组合的环境变量列表，env_name需要和var_name一一对应，如何有新活动按照格式添加(不懂勿动)
+## FRUITSHARECODES 东东农场
+## PLANT_BEAN_SHARECODES 种豆得豆
+## PETSHARECODES 东东萌宠
+## DDFACTORY_SHARECODES 东东工厂
+## DREAM_FACTORY_SHARE_CODES  京喜工厂
+env_name=(
+  JD_COOKIE
+  FRUITSHARECODES="c375f5806c5a406ca238dc4e5410f009&f010bfbb75fa403b8facd45d91954b6f&c466e4f13cbe467c850276d7c356c1ea&fa4753f4ceba4cce82029815d6638ea0&1034bf367b624feb8099cb9f3c035314&31a3b3b208a04c0bbc90e11425a53042&51a8f379bbc04876a2f78d21ba4186bf&f498e643abd8477da3b8f6ebf14f2def&af063f65b27646c9add726727328a064&1ddd03eafcdf4270999db01003db7dc6"
+  PETSHARECODES="MTEyNjE4NjQ2MDAwMDAwMDQ5OTIyNjY3&MTE1NDY3NTMwMDAwMDAwNDk5MjI3MDE=&MTEyNjE4NjQ2MDAwMDAwMDUwODI1MjYx&MTAxODc2NTEzOTAwMDAwMDAyMDYyODYyNw==&MTE1NDY3NTIwMDAwMDAwNTA4NDAyNjE=&MTE1NDQ5MzYwMDAwMDAwMzgxNjkyMzM="
+  PLANT_BEAN_SHARECODES="mluaqp25jqdzoaiyb4eb3viclm&7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa&hnyn3j5q6xitdiv5r54bx3zqha&mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq&ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka&bw2eckbfemfiba42bf52kidnvz6rr4je7cmp7ha&cd2lbjgriwpzsetjdo4i5t6s3jguvzlapilphxy&3nds3dh2ebzau6whfis7kg2h3q3h7wlwy7o5jii&olmijoxgmjutzsqjfcxsqazott36mnhuakgkc3q&wo7xc2znigdez23tkuin32egdsekabwcubzhgra&mlrdw3aw26j3xi3b3xgblzetwxwx4zbl73etuay"
+  DREAM_FACTORY_SHARE_CODES="1_I8MUjrb-aQDsqz2LaMAA==&K8tGGvR1bmSom0nejC2UmA==&6e9cQId9a_zbWhpMb9XSYg==&UOLfmpfmlAwVNt7E-y1a_A=="
+  DDFACTORY_SHARECODES="T012a1nTlrK8LPBsCjVWnYaS5kRrbA&T0205KkcG3ZmrxWNaEWB4atuCjVWnYaS5kRrbA&T010-vx3Qh8e9ACjVWnYaS5kRrbA&T0205KkcBUZcpBKDVl-m4KJwCjVWnYaS5kRrbA&T0205KkcNGhZvz2pVF2P6rNRCjVWnYaS5kRrbA&T018a1nTlJaULfRqIBn1lgCjVWnYaS5kRrbA&T022uvlyQRke9VTWPR_ylPYKcgCjVWnYaS5kRrbA&T018v_hzRx4b91TVJxmb1ACjVWnYaS5kRrbA&T0225KkcRk9M81GGdE6lxvMDcgCjVWnYaS5kRrbA&T019-ak7E315simNaGmVyKMCjVWnYaS5kRrbA&T0225KkcRRhI9VCCIhugkfIOJQCjVWnYaS5kRrbA"
+  JDZZ_SHARECODES
+  JDJOY_SHARECODES
+  JXNC_SHARECODES
+  BOOKSHOP_SHARECODES
+  JD_CASH_SHARECODES
+  JDSGMH_SHARECODES
+  JDCFD_SHARECODES
+  JDHEALTH_SHARECODES
+)
 ```
 
 ## 柠檬开卡3

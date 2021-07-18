@@ -24,15 +24,18 @@ cron "5 6-18/6 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/maste
 jd免费水果 搬的https://github.com/liuxiaoyucc/jd-helper/blob/a6f275d9785748014fc6cca821e58427162e9336/fruit/fruit.js
 */
 const $ = new Env('东东农场');
+
+console.log('\n====================QQ技术交流群 681030097====================\n')
+
 let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, newShareCodes, allMessage = '';
 //助力好友分享码(最多3个,否则后面的助力失败),原因:京东农场每人每天只有3次助力机会
 //此此内容是IOS用户下载脚本到本地使用，填写互助码的地方，同一京东账号的好友互助码请使用@符号隔开。
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
   //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'c466e4f13cbe467c850276d7c356c1ea@c375f5806c5a406ca238dc4e5410f009@fa4753f4ceba4cce82029815d6638ea0@f010bfbb75fa403b8facd45d91954b6f@51a8f379bbc04876a2f78d21ba4186bf@31a3b3b208a04c0bbc90e11425a53042@1ddd03eafcdf4270999db01003db7dc6@af063f65b27646c9add726727328a064',
+  'c375f5806c5a406ca238dc4e5410f009&f010bfbb75fa403b8facd45d91954b6f&c466e4f13cbe467c850276d7c356c1ea&fa4753f4ceba4cce82029815d6638ea0&1034bf367b624feb8099cb9f3c035314&31a3b3b208a04c0bbc90e11425a53042&51a8f379bbc04876a2f78d21ba4186bf&f498e643abd8477da3b8f6ebf14f2def&af063f65b27646c9add726727328a064&1ddd03eafcdf4270999db01003db7dc6',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'c466e4f13cbe467c850276d7c356c1ea@c375f5806c5a406ca238dc4e5410f009@fa4753f4ceba4cce82029815d6638ea0@f010bfbb75fa403b8facd45d91954b6f@51a8f379bbc04876a2f78d21ba4186bf@31a3b3b208a04c0bbc90e11425a53042@1ddd03eafcdf4270999db01003db7dc6@af063f65b27646c9add726727328a064',
+  'c375f5806c5a406ca238dc4e5410f009&f010bfbb75fa403b8facd45d91954b6f&c466e4f13cbe467c850276d7c356c1ea&fa4753f4ceba4cce82029815d6638ea0&1034bf367b624feb8099cb9f3c035314&31a3b3b208a04c0bbc90e11425a53042&51a8f379bbc04876a2f78d21ba4186bf&f498e643abd8477da3b8f6ebf14f2def&af063f65b27646c9add726727328a064&1ddd03eafcdf4270999db01003db7dc6',
 ]
 let message = '', subTitle = '', option = {}, isFruitFinished = false;
 const retainWater = 100;//保留水滴大于多少g,默认100g;

@@ -26,6 +26,7 @@ cron "10 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd
  */
 const $ = new Env('东东工厂');
 
+console.log('\n====================QQ技术交流群 681030097====================\n')
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';

@@ -43,8 +43,8 @@ let tuanActiveId = ``, hasSend = false;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '', allMessage = '';
 const inviteCodes = [
-  '6e9cQId9a_zbWhpMb9XSYg==@aQDsqz2LaMAA==@K8tGGvR1bmSom0nejC2UmA==', //账号一的好友shareCode,不同好友中间用@符号隔开
-  '6e9cQId9a_zbWhpMb9XSYg==@aQDsqz2LaMAA==@K8tGGvR1bmSom0nejC2UmA==', //账号二的好友shareCode，不同好友中间用@符号隔开
+  '1_I8MUjrb-aQDsqz2LaMAA==&K8tGGvR1bmSom0nejC2UmA==&6e9cQId9a_zbWhpMb9XSYg==&UOLfmpfmlAwVNt7E-y1a_A==', //账号一的好友shareCode,不同好友中间用@符号隔开
+  '1_I8MUjrb-aQDsqz2LaMAA==&K8tGGvR1bmSom0nejC2UmA==&6e9cQId9a_zbWhpMb9XSYg==&UOLfmpfmlAwVNt7E-y1a_A==', //账号二的好友shareCode，不同好友中间用@符号隔开
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
