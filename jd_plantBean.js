@@ -38,9 +38,6 @@ let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好�
   'mluaqp25jqdzoaiyb4eb3viclm@7oivz2mjbmnx56hxie4mesldxft422tev5dtgqa@hnyn3j5q6xitdiv5r54bx3zqha@mh5uulbrvnknkjxynyusmgjglp4tcmixyorzsgq@ebxm5lgxoknqdtiju2haj6ghvquprhmxicgrvka@T0225KkcRRhI9VCCIhugkfIOJQCjVWnYaS5kRrbA@wo7xc2znigdez23tkuin32egdsekabwcubzhgra@olmijoxgmjutzsqjfcxsqazott36mnhuakgkc3q',//账号二的好友shareCode，不同好友中间用@符号隔开
 ]
 
-if (process.env.PlantBeanShareCodes) {
-  shareCodes = process.env.PlantBeanShareCodes;
-}
 let allMessage = ``;
 let currentRoundId = null;//本期活动id
 let lastRoundId = null;//上期id
