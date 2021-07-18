@@ -6,6 +6,12 @@
 本人非大佬，定时更新各类整合脚本，失效脚本会及时删除
 拥有此库等于拥有所有！！！
 
+
+## 维护收集不易，大部分内容皆来自群友们和管理们的贡献，为了可持续发展，给我们一点支撑
+
+![image](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a406456-63ac-413b-b1f6-27a6eed5945e/470b3993-dd1c-4050-a9bf-8b311264780a.png)
+
+
 ## 超低价阿里云服务器
 #### [https://www.aliyun.com/activity/ambassador/share-gift/goods?taskCode=xfyh2107&recordId=764770&userCode=31csnowy](https://www.aliyun.com/activity/ambassador/share-gift/goods?taskCode=xfyh2107&recordId=764770&userCode=31csnowy)
 
@@ -25,7 +31,9 @@
 
 ## 交流群
 ### 1群 681030097
+![image](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a406456-63ac-413b-b1f6-27a6eed5945e/baf96b0a-3764-4d81-b47f-bdcc3c553c96.png)
 ### 2群 681030097
+![image](https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a406456-63ac-413b-b1f6-27a6eed5945e/98838c66-1a67-4c86-b52b-702742d7412a.png)
 
 # 拉取仓库
 ##### 名称
