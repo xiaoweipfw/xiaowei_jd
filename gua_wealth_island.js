@@ -16,6 +16,7 @@ cron "10 6-23/1 * * *" script-path=https://raw.githubusercontent.com/jiulan/plat
 ====================================小火箭=============================
 京喜财富岛 = type=cron,script-path=https://raw.githubusercontent.com/jiulan/platypus/main/scripts/jd_cfd_new.js, cronexpr="10 6-23/1 * * *", timeout=3600, enable=true
  */
+
 const $ = new Env('财富大陆');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.CryptoJS = $.isNode() ? require('crypto-js') : CryptoJS;
