@@ -227,7 +227,19 @@ export JD_JOY_REWARD_NAME="20"
 export JOY_RUN_HELP_MYSELF=true
 ```
 
+## 财富岛提现
+#### 获取Token方式：
+#### 打开【❗️京喜农场❗️】，手动任意完成<工厂任务>、<签到任务>、<金牌厂长任务>一项，提示获取cookie成功即可，然后退出跑任务脚本
+### TOKEN的形式：{"farm_jstoken":"749a90f871adsfads8ffda7bf3b1576760","timestamp":"1610165423873","phoneid":"42c7e3dadfadsfdsaac-18f0e4f4a0cf"}
+### MyJxncToken 对应ck编号
+### token 是json  多个拼接在字符中所以需要进行转译
 
+```
+MyJxncToken1={\"farm_jstoken\":\"1126cc70d0a640ee55d12d35a2c1a949\",\"timestamp\":\"1620465575092\",\"phoneid\":\"f13e8ecbcdc218d5\"}
+MyJxncToken2={\"farm_jstoken\":\"2d65af69867386b0fed959d25aadbcd4\",\"timestamp\":\"1620489451718\",\"phoneid\":\"144925245d4b8372\"}
+MyJxncToken3=
+export JXNCTOKENS="${MyJxncToken1}&${MyJxncToken2}&${MyJxncToken3}"
+```
 
 
 # 安装青龙扫描
