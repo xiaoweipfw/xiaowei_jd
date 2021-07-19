@@ -78,7 +78,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
     $.done();
   })
 function helpme() {
-    var arr = [yqm,'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D','WOthVgy8sELwGTrVkIwITA%3D%3D','9v56HCBE5cvJerOxwnLQUg%3D%3D'];
+    var arr = [yqm,'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D','WOthVgy8sELwGTrVkIwITA%3D%3D','9v56HCBE5cvJerOxwnLQUg%3D%3D','CESx%2BbJc4LbLt9cktRkbuw%3D%3D'];
     var index = Math.floor((Math.random()*arr.length));
     return new Promise(async (resolve) => {
 
