@@ -21,7 +21,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
 var pins = process.env.earn30Pins ? process.env.earn30Pins : '';
 let cookiesArr = [];
-var helps = [{"shareCode":"1DE8E33AEFC93BD800493FE3FB4CF543","redPacketId":"866636297705897984"}];
+var helps = [{"shareCode":"52398F82A0208CA0F7F1816DA0DD6FA0","redPacketId":"866848057004539904"}];
 var tools = [];
 !(async () => {
     if (!pins) {
