@@ -35,7 +35,7 @@ $.CryptoJS = $.isNode() ? require('crypto-js') : CryptoJS;
  * 提现金额，可选0.1 0.5 1 2 10  默认0.1
  * export CFD_CASHOUT_MONEY=0.1
  */
-let money = 0.1
+let money = 0.5
 let jdTokenNode = [];
 $.tokenArr = [];
 $.appId = 10028;
