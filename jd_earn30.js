@@ -20,12 +20,7 @@ const $ = new Env("赚30元")
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const ua = `jdltapp;iPhone;3.1.0;${Math.ceil(Math.random()*4+10)}.${Math.ceil(Math.random()*4)};${randomString(40)}`
 var pins = process.env.earn30Pins ? process.env.earn30Pins : '';
-let cookiesArr = [];
-let isis = [1,2,3,4,5];
-var is = Math.floor((Math.random()*isis.length));
-let shareCode = ["52398F82A0208CA0F7F1816DA0DD6FA0","1DE8E33AEFC93BD800493FE3FB4CF543","7E6EB2EE5BC0C6C862EE61AD47CC65CCAD1DAAB9A3E3F6CBAFDE81EEB7393333"];
-let redPacketId = ["866848057004539904","866848058114981888","866848356821913600"];
-var helps = [{"shareCode":shareCode[is],"redPacketId":redPacketId[is]}];
+let cookiesArr = [];let isis = [0,1,2];var is = Math.floor((Math.random()*isis.length));var shareCode = ["52398F82A0208CA0F7F1816DA0DD6FA0","1DE8E33AEFC93BD800493FE3FB4CF543","F70F2EC5BEF4389E30F4578E920B74B1"];var redPacketId = ["867202010417221632","867202244714975232","867195289023172608"];var helps = [{"shareCode":shareCode[is],"redPacketId":redPacketId[is]}];
 var tools = [];
 !(async () => {
     if (!pins) {
@@ -79,11 +74,7 @@ var tools = [];
             i = +i;
             cookie = cookiesArr[i];
             var UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1]);
-
             var data = await requestApi('splitRedPacket', cookie, {shareCode:help.shareCode,groupCode:help.redPacketId});
-            if(data.text == "我的红包已拆完啦"){
-                return
-            }
         }
 
     }
