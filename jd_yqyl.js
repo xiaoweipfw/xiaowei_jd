@@ -17,8 +17,8 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
-let yqm = 'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D';
-let zdtx = true //设置为true自动抢提现100
+let yqm = '';
+let zdtx = false //设置为true自动抢提现100
 if (process.env.yqm) {
     yqm = process.env.yqm;
 }
@@ -80,11 +80,6 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
         $.done();
     })
 function helpme() {
-    var arr = [yqm,'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D','WOthVgy8sELwGTrVkIwITA%3D%3D','9v56HCBE5cvJerOxwnLQUg%3D%3D','CESx%2BbJc4LbLt9cktRkbuw%3D%3D'];
-    var index = Math.floor((Math.random()*arr.length));
-    yqm = arr[index];
-    console.log(`------------本次随机邀请码--${yqm}------------`)
-
     return new Promise(async (resolve) => {
 
         let options = {
