@@ -8,7 +8,7 @@
 export yqm="你的邀请码"
 #柠檬邀请有礼
 [task_local]
-0 0,2,4,6 10 * * * http://nm66.top/jd_yqyl.js, tag=柠檬邀请有礼, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+0 10 * * * http://nm66.top/jd_yqyl.js, tag=柠檬邀请有礼, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 */
 const $ = new Env('柠檬邀请有礼');
 const notify = $.isNode() ? require('./sendNotify') : '';
@@ -18,7 +18,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let yqm = 'UtYmOqFJrh4Sl45d4mqg6Q%3D%3D';
-let zdtx = true //设置为true自动抢提现100
+let zdtx = false //设置为true自动抢提现100
 if (process.env.yqm) {
     yqm = process.env.yqm;
 }
@@ -138,16 +138,8 @@ function tx() {
 
         $.get(options, async (err, resp, data) => {
             try {
-
                 data = JSON.parse(data);
-
-
                 console.log(data.message)
-
-
-
-
-
                 //return data.data;
 //allMessage += `京东账号${$.index}-${$.nickName || $.UserName}\n抽取京豆：${data.data.result.userAwardsCacheDto.jBeanAwardVo.prizeName}${$.index !== cookiesArr.length ? '\n\n' : '\n\n'}`;
                 //}
