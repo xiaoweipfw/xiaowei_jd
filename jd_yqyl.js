@@ -138,8 +138,16 @@ function tx() {
 
         $.get(options, async (err, resp, data) => {
             try {
+
                 data = JSON.parse(data);
+
+
                 console.log(data.message)
+
+
+
+
+
                 //return data.data;
 //allMessage += `京东账号${$.index}-${$.nickName || $.UserName}\n抽取京豆：${data.data.result.userAwardsCacheDto.jBeanAwardVo.prizeName}${$.index !== cookiesArr.length ? '\n\n' : '\n\n'}`;
                 //}
