@@ -246,3 +246,11 @@ export JXNCTOKENS="${MyJxncToken1}&${MyJxncToken2}&${MyJxncToken3}"
 ```
 qjd_zlzh = ['程序工厂', '程序工厂2号']
 ```
+## 京喜工厂开团
+#### 一个账号能参团一次，一个账号一天能开三次团，请根据自己的情况设置需要开团的CK，一般至少5个CK能成团
+#### 脚本每执行一次，会领取上一次成团的奖励和新开一次团，每天执行4次能开完3次团和领取3次团的奖励
+#### OPEN_DREAMFACTORY_TUAN 脚本默认第一个CK开团，例：若OPEN_DREAMFACTORY_TUAN="2,3"  则第2，第3个CK开团，其他账号参加第2，第3个CK开的团
+
+```
+export OPEN_DREAMFACTORY_TUAN="1,2,3,4,5,6,7,8,9,10"
+```
