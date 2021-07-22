@@ -240,68 +240,10 @@ MyJxncToken2={\"farm_jstoken\":\"2d65af69867386b0fed959d25aadbcd4\",\"timestamp\
 MyJxncToken3=
 export JXNCTOKENS="${MyJxncToken1}&${MyJxncToken2}&${MyJxncToken3}"
 ```
-
-
-# 安装青龙扫描
-原来安装过青龙面板，后期由于强哥更新导致扫码失效
-
-本文只给以前安装过青龙面板的人看，没安装的人自己找路径，由于涉及别人利润，那二篇文章我删了
-
-## 开放5701端口（要开放二个地方）
-阿里云开放5701端口
-服务器开放5701端口
-
-## 以前安装过的
-先在root目录下删除 public、JDC_arm64.zip、JDC_arm64、JDC 等文件,停止5701服务
-
-## 开始安装
-#### 服务器输入指令
-```
-yum install wget unzip -y
-```
-### 进入root目录
-
-#### 服务器输入指令
-```
-cd ..
-```
+## 全民抢京豆（7.22-7.31）
+#### 满160豆需要20人助力，每个用户目前只能助力2次不同的用户
+#### 设置被助力的账号可填用户名 或 pin的值不要;
 
 ```
-cd root/
+export qjd_pin = ""
 ```
-
-服务器输入指令
-```
-wget https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a406456-63ac-413b-b1f6-27a6eed5945e/e517fb39-1bf6-4462-88b6-2983db76d1bb.zip && unzip e517fb39-1bf6-4462-88b6-2983db76d1bb.zip
-```
-
-服务器输入指令
-```
-chmod 777 JDC
-```
-
-服务器输入指令
-```
-./JDC
-```
-
-服务器输入指令
-```
-nohup ./JDC &
-```
-
-键盘按 Ctrl 键+ C 键 (要一起按下)，回到输入
-
-服务器输入指令
-
-```
-cd public
-```
-
-服务器输入指令
-
-```
-wget https://vkceyugu.cdn.bspapp.com/VKCEYUGU-4a31945b-22cb-4446-83cb-b078e22c7b51/70af12c5-cd1d-4871-9c2c-4cfdda6993f0.zip && unzip 70af12c5-cd1d-4871-9c2c-4cfdda6993f0.zip
-```
-
-IP + 5701  即可直接访问,扫码登录京东账号
