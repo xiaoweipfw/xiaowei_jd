@@ -23,7 +23,7 @@ cookies = ''
 # 设置助人,用户名 或 pin 用&分割
 qjd_pin = ""
 qjd_zlzh = qjd_pin.split('&')
- msg(f"取到第一个人是 {qjd_zlzh[0]}  -------------------------")
+ msg(f"取到第一个人是 -------------------------" + qjd_zlzh[0] )
 # Env环境设置 通知服务
 # export BARK=''                   # bark服务,苹果商店自行搜索;
 # export SCKEY=''                  # Server酱的SCKEY;
