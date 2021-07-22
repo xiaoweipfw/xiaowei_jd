@@ -18,12 +18,9 @@ update: 2021.7.22 16:55
 #exit(0)
 #ck 优先读取【JDCookies.txt】 文件内的ck  再到 ENV的 变量 JD_COOKIE='ck1&ck2' 最后才到脚本内 cookies=ck
 cookies = ''
-# qjd_zlzh = ['Your JD_User', '买买买']
-
 # 设置助人,用户名 或 pin 用&分割
-qjd_pin = ""
-qjd_zlzh = qjd_pin.split('&')
- msg(f"取到第一个人是 -------------------------" + qjd_zlzh[0] )
+qjd_zlzh = ['程序工厂', '程序工厂2号']
+
 # Env环境设置 通知服务
 # export BARK=''                   # bark服务,苹果商店自行搜索;
 # export SCKEY=''                  # Server酱的SCKEY;

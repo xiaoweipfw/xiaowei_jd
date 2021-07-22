@@ -242,8 +242,7 @@ export JXNCTOKENS="${MyJxncToken1}&${MyJxncToken2}&${MyJxncToken3}"
 ```
 ## 全民抢京豆（7.22-7.31）
 #### 满160豆需要20人助力，每个用户目前只能助力2次不同的用户
-#### 设置被助力的账号可填用户名 或 pin的值不要;
-
+#### 设置被助力的账号可填用户名 或 pin的值不要;修改文件 jd_qjd.py  
 ```
-export qjd_pin = ""
+qjd_zlzh = ['程序工厂', '程序工厂2号']
 ```
