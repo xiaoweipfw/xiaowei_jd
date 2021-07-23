@@ -30,6 +30,11 @@ if ($.isNode() && process.env.summer_movement_HelpHelpHelpFlag) {
   summer_movement_HelpHelpHelpFlag = process.env.summer_movement_HelpHelpHelpFlag;
 }
 
+// 正道的光
+let zddg = false;// 该脚本启用了[正道的光]模式\n执行 做任务、做店铺任务 会有几率不执行\n本脚本不让任务一次全部做完\n您可以多跑几次\n北京时间18时后是正常模式
+if ($.isNode() && process.env.zddg) {
+  zddg = process.env.zddg;
+}
 
 let ShHelpAuthorFlag = true;//是否助力作者SH  true 助力，false 不助力
 if ($.isNode() && process.env.ShHelpAuthorFlag) {
@@ -882,13 +887,19 @@ function joinjoinjoinhui(url,Referer) {
 
 // 正道的光
 function aabbiill(){
-//  let ccdd = 0
-//  if(new Date().getUTCHours() + 8 >= 18 && new Date().getUTCHours() + 8 < 24){
-//    ccdd = 1
-//  }else{
-//    ccdd = getRndInteger(0,3)
-//  }
-  return 1 == 1
+    if (`${zddg}` === "true") {
+        console.log('✅✅✅✅✅您【开启】了正道的光模式✅✅✅✅✅')
+        let ccdd = 0
+        if(new Date().getUTCHours() + 8 >= 18 && new Date().getUTCHours() + 8 < 24){
+            ccdd = 1
+        }else{
+            ccdd = getRndInteger(0,3)
+        }
+        return ccdd == 1
+    }else (`${zddg}` === "false") {
+      console.log('×××××××您【关闭】了正道的光模式×××××××')
+      return true
+    }
 }
 
 // 随机数
