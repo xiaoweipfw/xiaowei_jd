@@ -887,7 +887,7 @@ function joinjoinjoinhui(url,Referer) {
 
 // 正道的光
 function aabbiill(){
-    if (!zddg) {
+    if (zddg) {
         console.log('✅✅✅✅✅您【开启】了正道的光模式✅✅✅✅✅')
         let ccdd = 0
         if(new Date().getUTCHours() + 8 >= 18 && new Date().getUTCHours() + 8 < 24){

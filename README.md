@@ -281,3 +281,8 @@ export ShHelpAuthorFlag=true
 ```
 export MAX_BET=false
 ```
+### 燃动夏季-正道的光
+#### 原作者脚本启用了[正道的光]模式\n执行 做任务、做店铺任务 会有几率不执行\n本脚本不让任务一次全部做完\n您可以多跑几次\n北京时间18时后是正常模式 【默认 false 关闭】
+```
+export zddg=false
+```
