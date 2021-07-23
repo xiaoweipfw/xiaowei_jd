@@ -254,3 +254,25 @@ qjd_zlzh = ['程序工厂', '程序工厂2号']
 ```
 export OPEN_DREAMFACTORY_TUAN="1,2,3,4,5,6,7,8,9,10"
 ```
+
+## 燃动夏季
+### 入会
+#### OPEN_DREAMFACTORY_TUAN 是否入会  true 入会，false 不入会 【默认 false】
+```
+export summer_movement_joinjoinjoinhui=false
+```
+### 百元守卫战SH
+#### summer_movement_ShHelpFlag = 0不开启也不助力 1开启并助力 2开启但不助力 【默认 1】
+```
+export summer_movement_ShHelpFlag=1
+```
+### 邀请助力
+#### summer_movement_HelpHelpHelpFlag = false 是否只执行邀请助力  true 是，false 不是 【默认 false】
+```
+export summer_movement_HelpHelpHelpFlag=false
+```
+### 是否助力作者SH
+#### ShHelpAuthorFlag = true 是否助力作者SH  true 助力，false 不助力 【默认 true】
+```
+export ShHelpAuthorFlag=true
+```
