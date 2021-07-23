@@ -896,7 +896,7 @@ function aabbiill(){
             ccdd = getRndInteger(0,3)
         }
         return ccdd == 1
-    }else (`${zddg}` === "false") {
+    }else {
       console.log('×××××××您【关闭】了正道的光模式×××××××')
       return true
     }
